@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"   
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   
+http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  
+  <modelVersion>4.0.0</modelVersion>  
+  
+  <groupId>com.clearcode</groupId>  
+  <artifactId>child-project</artifactId>  
+  <version>0.0.1</version>
+  <!-- <build>
+  	<finalName>final-parent-project</finalName>
+  </build> -->
+  <parent>
+		<groupId>com.clearcode</groupId>
+		<artifactId>parent-project</artifactId>
+		<version>0.0.1</version>
+		<!-- relative path is something which helps maven to identify parent project's POM, by default it is project->POM.xml but if wanna change it can be -->
+		<!-- <relativePath />  lookup parent from repository -->
+	</parent>
+</project>
